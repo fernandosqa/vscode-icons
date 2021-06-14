@@ -1,105 +1,131 @@
 # vscode-icons
-[![Version](http://vsmarketplacebadge.apphb.com/version/robertohuertasm.vscode-icons.svg)](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
-[![Installs](http://vsmarketplacebadge.apphb.com/installs/robertohuertasm.vscode-icons.svg)](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons)
-[![Ratings](https://vsmarketplacebadge.apphb.com/rating/robertohuertasm.vscode-icons.svg)](https://vsmarketplacebadge.apphb.com/rating/robertohuertasm.vscode-icons.svg)
 
+[![Version](https://vsmarketplacebadge.apphb.com/version/vscode-icons-team.vscode-icons.svg)](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/vscode-icons-team.vscode-icons.svg)](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating/vscode-icons-team.vscode-icons.svg)](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 
-Bring icons to your VS Code.
+[![Build Status](https://travis-ci.org/vscode-icons/vscode-icons.svg?branch=master)](https://travis-ci.org/vscode-icons/vscode-icons)
+[![Build Status](https://ci.appveyor.com/api/projects/status/github/vscode-icons/vscode-icons?branch=master&svg=true)](https://ci.appveyor.com/project/vscode-icons-team/vscode-icons)
 
-<img src="https://raw.githubusercontent.com/robertohuertasm/vscode-icons/master/screenshot.png" >
+[![Dependencies Status](https://david-dm.org/vscode-icons/vscode-icons/status.svg)](https://david-dm.org/vscode-icons/vscode-icons)
+[![DevDependencies Status](https://david-dm.org/vscode-icons/vscode-icons/dev-status.svg)](https://david-dm.org/vscode-icons/vscode-icons?type=dev)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/4f02368ebeb7be1490bb/maintainability)](https://codeclimate.com/github/vscode-icons/vscode-icons/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/4f02368ebeb7be1490bb/test_coverage)](https://codeclimate.com/github/vscode-icons/vscode-icons/test_coverage)
+[![Known Vulnerabilities](https://snyk.io/test/github/vscode-icons/vscode-icons/badge.svg)](https://snyk.io/test/github/vscode-icons/vscode-icons)
+
+[![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/vscode-icons/vscode-icons.svg)](https://isitmaintained.com/project/vscode-icons/vscode-icons "Average time to resolve an issue")
+[![Percentage of issues still open](https://isitmaintained.com/badge/open/vscode-icons/vscode-icons.svg)](https://isitmaintained.com/project/vscode-icons/vscode-icons "Percentage of issues still open")
+
+---
+
+Bring icons to your [Visual Studio Code](https://code.visualstudio.com/) (**minimum supported version: `1.40.2`**)
+
+![demo](https://raw.githubusercontent.com/vscode-icons/vscode-icons/master/images/screenshot.gif)
+
+---
+
+## Gold Sponsors
+
+<p><a title="Try CodeStream" href="https://sponsorlink.codestream.com/?utm_source=vscmarket&amp;utm_campaign=vscodeicons&amp;utm_medium=banner"><img src="https://alt-images.codestream.com/codestream_logo_vscodeicons.png"></a></br>
+Manage pull requests and conduct code reviews in your IDE with full source-tree context. Comment on any line, not just the diffs. Use jump-to-definition, your favorite keybindings, and code intelligence with more of your workflow.<br> <a title="Try CodeStream" href="https://sponsorlink.codestream.com/?utm_source=vscmarket&amp;utm_campaign=vscodeicons&amp;utm_medium=banner">Learn More</a></p>
 
 ## Installation
 
-Some people have reported that they cannot find the extension when they insert the installation command:
-```
+To install the extension just execute the following command in the Command Palette of Visual Studio Code:
+
+```sh
 ext install vscode-icons
 ```
 
-If you're in the same position try this:
+Some people have reported that they cannot find the extension when they insert the installation command.
+
+If you find yourself in the same position, try:
+
 ```sh
 ext install icons
 # or
 ext install "vscode-icons"
 ```
 
-## Extension commands
+## Security
 
-As you know to access the command palette and introduce commands you can use ***F1*** (all OS), ***Ctrl+Shift+P*** (Windows & Linux) or ***Cmd+Shift+P*** (OS X).
+`vscode-icons` utilizes [NSRI](https://www.npmjs.com/package/nsri) for its subresources integrity check and protection against code injection.
 
-- ***Icons Enable*** : It enables the extension.
-- ***Icons Disable***: It will disable the icons.
-- ***Icons Update***: Useful in case of extension update. It will disable and enable the icons for you refreshing the injected code and downloading new icons.
+## Usage
 
-## Windows users
-**In Windows, make sure you run your VS Code in Administrator mode before enabling or disabling the icons!**
+Once installed and after reloading `vscode`, you will be presented with a message to `Activate` the icons.
 
-## Linux users
-**Linux also requires you to reclaim ownership of the vs code folders** 
-You can achieve this by executing this on your terminal (Ubuntu):
-```sh
-#for vs code:
-sudo chown -R $(whoami) /usr/share/code
-#for vs code insiders:
-sudo chown -R $(whoami) /usr/share/code-insiders
-#if you want to check your folder's owner:
-ls -la /usr/share/code
-#if you want to rollback this permissions back to root:
-sudo chown -R root /usr/share/code
-```
-If you're using any other Linux flavour please [take a look at this Github's issue](https://github.com/robertohuertasm/vscode-icons/issues/6).
+In case this doesn't happen, navigate to:
 
+* `Linux` & `Windows` `=>` **File > Preferences > File Icon Theme > VSCode Icons**.
+* `MacOS` `=>` **Code > Preferences > File Icon Theme > VSCode Icons**.
 
+## Features
 
-## List of supported icons
-The list is slowly growing. If you want to check what icons are currently supported take a look [here](https://github.com/robertohuertasm/vscode-icons/blob/master/src/build/supportedExtensions.js). If you feel that there's some icon missing please let me know through [the issues section of the Github's repo](https://github.com/robertohuertasm/vscode-icons/issues).
+`vscode-icons` is being shipped with a lot of features, like:
 
-If you're a designer and you're willing to collaborate by showing your icons to the world you're more than welcome!! Currently, we don't have icons for the light template so any help will be really appreciated and credit will be given to you ;D
+* [Icons Customization](https://github.com/vscode-icons/vscode-icons/wiki/Customization)
+* [Project Auto-Detection](https://github.com/vscode-icons/vscode-icons/wiki/Pad)
+* [Custom Configuration](https://github.com/vscode-icons/vscode-icons/wiki/Configuration)
 
-## Custom icons support
-If you want to use your own set of icons you can define a url in your settings and the extension will look for a package there.
+## Globalization
 
-The default icons url is [http://github.com/robertohuertasm/vscode-icons/blob/master/icons.zip?raw=true](http://github.com/robertohuertasm/vscode-icons/blob/master/icons.zip?raw=true).
+`vscode-icons` uses [Crowdin](https://crowdin.com/project/vscode-icons-i18n) to provide translations for `vscode` supported languages.
 
-**Very important:** that the icons' package must be named ***icons.zip***
+We are looking for translators and proofreaders for all `vscode` supported languages.
 
-In order to set your icons.zip url you must open Preferences > User Settings and set this:
+If you'd like to contribute, checkout the [translation section](https://github.com/vscode-icons/vscode-icons/wiki/Translation).
 
-```json
-{
-  "vsicons.icons": "http://yourUrl/icons.zip"
-}
-```
+## Contributing
 
-If you create cool icons' sets please share your urls in the Github repo as issues and I will link them here so everyone can get access to them! ;D
+If you like to get involved with the source code, checkout the [build section](https://github.com/vscode-icons/vscode-icons/wiki/Build).
 
-##Working Files
-Some of you have asked for icons for the Working Files section. As you know, this extension takes profit of the existing code by replacing it and changing a little bit its logic. There's no support from the Extension API for DOM manipulation. The Working Files section is under heavy refactoring and there are going to be changes coming soon. In fact, tabs will be implemented in this section (you can take a peek by installing the Insiders version).
+For those using [Docker](https://www.docker.com/) checkout the [docker section](https://github.com/vscode-icons/vscode-icons/wiki/Docker).
 
-In this scenario, I think it's better to wait for the next version of the Working Files section and then try to "hack" it. Possibly, once tabs are implemented the team is going to provide a proper way to extend the treeview with icons so the "hack" won't be needed at all ;P
+On the other hand, if you want to show the world your artistic side, checkout the [contributing section](https://github.com/vscode-icons/vscode-icons/wiki/Contributing).
 
+In any case, please follow our [contribution guidelines](https://github.com/vscode-icons/vscode-icons/blob/master/.github/CONTRIBUTING.md).
 
-# Disclaimer
-This extension modifies some VS Code files so use it at your own risk.
-Currently, icons are not supported by the extension functionality that VS Code provides so this extension solves this issue by injecting code into two files:
+## Documentation
 
-- workbench.main.js
-- workbench.main.css
+In our [wiki](https://github.com/vscode-icons/vscode-icons/wiki) you can find info, like:
 
-The extension will keep a copy of the original files in case something goes wrong. That's what the disable command will do for you.
+* [Extension's History](https://github.com/vscode-icons/vscode-icons/wiki/History)
+* [Supported file icons](https://github.com/vscode-icons/vscode-icons/wiki/ListOfFiles).
+* [Supported folder icons](https://github.com/vscode-icons/vscode-icons/wiki/ListOfFolders).
 
-As this extension modifies VS Code files it will get disabled with every VS Code update. You will have to enable icons again via command palette.
+and more.
 
-Take into account that this extension is still in beta so you may find some bugs while playing with it. Please, report them to [the issues section of the Github's repo](https://github.com/robertohuertasm/vscode-icons/issues).
+## Credits
 
-**Please, leave a review if you can so the VS Code Team can know that this is a very demanded feature and, maybe, they can then provide a proper way to extend the IDE regarding icons and customizations soon enough. ;D**
+Kudos to all [contributors](https://github.com/vscode-icons/vscode-icons/graphs/contributors) that made this extension what it is.
 
-More file extensions will be supported shortly!
+## License
 
-# Building the extension's source code
-If you're willing to explore the extension source code and want to make it work you should run this first:
-```js
-npm run build
-```
-This script will generate the css and js code to be injected into vscode source code.
+The source code is licensed under the [MIT](LICENSE) license.
+
+The icons are licensed under the [Creative Commons - ShareAlike (CC BY-SA)](https://creativecommons.org/licenses/by-sa/4.0/) license.
+
+Branded icons are licensed under their copyright license.
+
+## Versioning
+
+`vscode-icons` follows [Semantic Versioning 2.0.0](http://semver.org/).
+
+## Change Log
+
+You can checkout all our changes in our [change log](https://github.com/vscode-icons/vscode-icons/blob/master/CHANGELOG.md).
+
+## Acknowledgements
+
+We like to express our "Special Thanks" to:
+
+* All users that made us their favorite **Icons** theme. We wouldn't be where we are without you.
+
+## Related extensions
+
+* [vscode-icons for GitHub](https://github.com/dderevjanik/github-vscode-icons) by [@dderevjanik](https://github.com/dderevjanik) will allow you to see all `GitHub`'s files with `vscode-icons` icons.
+* [vscode-icons-js](https://github.com/dderevjanik/vscode-icons-js) by [@dderevjanik](https://github.com/dderevjanik) get file/folder specific icon from `vscode-icons` icons.
 
 **Enjoy!**
